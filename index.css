@@ -1348,9 +1348,22 @@ h1{
 }
 
 /* Smartphone */
-@media(max-width: 480px){
-    .container-about {
-        padding: 8.5rem 20px 13rem 20px;
+@media(max-width: 360px){
+    .hero-section{
+        width: 109.7% ;
+    }
+    .hero-text h1 {
+        font-size: 2.6rem;
+    }
+    section{
+        width: 109.7%;
+    }
+    
+    .container-about{
+        padding: 5rem 10px;
+    }
+    #t10, #t10 span{
+        font-size: 2.5rem;
     }
     .about-content{
         margin-left: 2rem;
@@ -1362,18 +1375,35 @@ h1{
         padding: 0 1rem;
         margin: 0;
     }
+    #t25{
+        font-size: 2rem;
+        padding: 7rem 0 3rem 0;
+    }
+    .service-content{
+        padding: 0 3rem;
+    }
     .buttons{
         flex-direction: column;
         top: 55rem;
     }
+    .btn-group .btn {
+        margin: 15px 0;
+    }
     .buttons .btn.btn{
         padding: 5px 10px;
+    }
+    .buttons .btn1.btn {
+        margin: 5rem 0 0 0;
     }
     .buttons .btn2.btn{
         margin: 2rem 0 0 0;
     }
+    .footer{
+        width: 109.7%;
+    }
     .footer-container{
-        grid-template-columns: 1fr;
+        grid-template-columns: 0fr;
+        gap: 0;
     }
     .footer-social{
         text-align: center;
