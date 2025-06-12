@@ -37,16 +37,16 @@
     --font-weight-bold: 800;
 }
 
-*{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    font-family: poppins, sans-serif;
-    text-decoration: none;
-    transition: all .3s ease;
-    scroll-behavior: smooth;
-    list-style-type: none;
-}
+    *{
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        font-family: poppins, sans-serif;
+        text-decoration: none;
+        transition: all .3s ease;
+        scroll-behavior: smooth;
+        list-style-type: none;
+    }
 
 body{
     overflow-x: hidden;  

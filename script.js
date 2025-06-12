@@ -44,31 +44,31 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 });
 
-// Dark Mode Light Mode
-document.addEventListener("DOMContentLoaded", () => {
-    const themeToggle = document.querySelectorAll("#theme, #sun");
-    const body = document.body;
+    // Dark Mode Light Mode
+    document.addEventListener("DOMContentLoaded", () => {
+        const themeToggle = document.querySelectorAll("#theme, #sun");
+        const body = document.body;
 
-    const Icon = () => {
-        themeToggle.forEach(btn => {
-            if (body.classList.contains("dark")) {
-                btn.classList.remove("bx-sun");
-                btn.classList.add("bx-moon");
-            } else {
-                btn.classList.remove("bx-moon");
-                btn.classList.add("bx-sun");
-            }
-        });
-    };
+        const Icon = () => {
+            themeToggle.forEach(btn => {
+                if (body.classList.contains("dark")) {
+                    btn.classList.remove("bx-sun");
+                    btn.classList.add("bx-moon");
+                } else {
+                    btn.classList.remove("bx-moon");
+                    btn.classList.add("bx-sun");
+                }
+            });
+        };
 
-    themeToggle.forEach(toggle => {
-        toggle.addEventListener("click", () => {
-            body.classList.toggle("dark"); 
-            Icon();
+        themeToggle.forEach(toggle => {
+            toggle.addEventListener("click", () => {
+                body.classList.toggle("dark"); 
+                Icon();
+            });
         });
+        Icon();
     });
-    Icon();
-});
 
 // Translate
 const translationsIndonesian = {
